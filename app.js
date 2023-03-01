@@ -13,7 +13,7 @@ const chronos = [{id:0, name:"Alpha", coordinates:[1,2,3], age:"A lot"},
 ];
 
 app.get("/", (req, res) => {
-    res.send(`/__dirname__/public/index.html`);
+    res.send("/public/index.html");
 }); 
 
 
