@@ -25,7 +25,8 @@ app.get("/chronos/:id", (req, res) => {
     res.send({Data:chronos[req.params.id]})
 });
 
-app.post("/chronos", (req, res) => { //TO DO: data validation: do not post !chronos
+//TO DO: data validation: do not post !chronos
+app.post("/chronos", (req, res) => { 
     const chronosToCreate = req.body;
     chronos.push(chronosToCreate);
     res.send({"Data updated":chronos});
